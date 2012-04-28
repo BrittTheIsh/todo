@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>BLOG_NAME</title>
+ <link href="YOUR_URL/atom.xml" rel="self"/>
+ <link href="YOUR_URL"/>
+ <updated>2012-04-28T13:49:27-06:00</updated>
+ <id>BLOG_URL</id>
+ <author>
+   <name>BLOG_NAME</name>
+ </author>
+
+ 
+ <entry>
+   <title>blogs_be_good</title>
+   <link href="YOUR_URL/blogs-be-good.html"/>
+   <updated>2012-04-28T00:00:00-06:00</updated>
+   <id>BLOG_URL/blogs-be-good</id>
+   <content type="html">&lt;h1&gt;Blogs Be Good&lt;/h1&gt;
+
+&lt;p&gt;It's true, they're good for everyone.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;They teach&lt;/li&gt;
+&lt;li&gt;They interest&lt;/li&gt;
+&lt;li&gt;They blah blah blah.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ 
+</feed>
