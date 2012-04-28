@@ -1,0 +1,12 @@
+---
+layout: post
+published: true
+title: rails_conf_2012
+---
+
+# RailsConf 2012 Highlights
+
+* DHH Talk
+* Redis & Rails Integration
+* Agora Games/MLG Scaling
+* Backbone.js Patterns

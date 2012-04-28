@@ -4,12 +4,29 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2012-04-28T13:49:27-06:00</updated>
+ <updated>2012-04-28T13:57:49-06:00</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
  </author>
 
+ 
+ <entry>
+   <title>rails_conf_2012</title>
+   <link href="YOUR_URL/rails-conf-2012.html"/>
+   <updated>2012-04-28T00:00:00-06:00</updated>
+   <id>BLOG_URL/rails-conf-2012</id>
+   <content type="html">&lt;h1&gt;RailsConf 2012 Highlights&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DHH Talk&lt;/li&gt;
+&lt;li&gt;Redis &amp;amp; Rails Integration&lt;/li&gt;
+&lt;li&gt;Agora Games/MLG Scaling&lt;/li&gt;
+&lt;li&gt;Backbone.js Patterns&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>blogs_be_good</title>
