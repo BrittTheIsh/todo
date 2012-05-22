@@ -13,11 +13,15 @@ class ListsController < ApplicationController
   end
 
   def destroy
-    @list = List.find(params[:id])
-    @list.destroy
+    aggregator = Librato::Metrics::Aggregator.new
+    aggregator.time :list_destroy do
+      @list = List.find(params[:id])
+      @list.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(root_url) }
+      respond_to do |format|
+        format.html { redirect_to(root_url) }
+      end
     end
+    aggregator.submit
   end
 end

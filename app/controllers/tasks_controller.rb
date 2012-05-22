@@ -46,11 +46,14 @@ class TasksController < ApplicationController
 
 
   def destroy
-    @task = Task.find(params[:id])
-    @task.destroy
+    aggregator = Librato::Metrics::Aggregator.new
+    aggregator.time :task_destroy do
+      @task = Task.find(params[:id])
+      @task.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(list_tasks_url(@list)) }
+      respond_to do |format|
+        format.html { redirect_to(list_tasks_url(@list)) }
+      end
     end
   end
   
