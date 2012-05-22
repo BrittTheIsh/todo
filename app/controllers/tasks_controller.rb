@@ -1,3 +1,5 @@
+require 'librato/metrics'
+
 class TasksController < ApplicationController
 
 

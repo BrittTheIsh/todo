@@ -1,3 +1,5 @@
+require 'librato/metrics'
+
 class ListsController < ApplicationController
 
   def create
