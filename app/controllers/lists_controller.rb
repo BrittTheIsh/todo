@@ -9,6 +9,7 @@ class ListsController < ApplicationController
       @list.save ? flash[:notice] = "Your list was created" : flash[:alert] = "There was an error creating your list."
       redirect_to(list_tasks_url(@list))
     end
+    aggregator.submit
   end
 
   def destroy

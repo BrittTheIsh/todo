@@ -27,6 +27,7 @@ class TasksController < ApplicationController
       end
       redirect_to(list_tasks_url(@list))
     end
+    aggregator.submit
   end
   
 
