@@ -14,14 +14,17 @@ class TasksController < ApplicationController
 
 
   def create
-    @list = List.find(params[:list_id])
-    @task = @list.tasks.new(params[:task])
-    if @task.save
+    aggregator = Librato::Metrics::Aggregator.new
+    aggregator.time :task_create do
+      @list = List.find(params[:list_id])
+      @task = @list.tasks.new(params[:task])
+      if @task.save
         flash[:notice] = "Your task was created."
-    else
+      else
         flash[:alert] = "There was an error creating your task."
+      end
+      redirect_to(list_tasks_url(@list))
     end
-    redirect_to(list_tasks_url(@list))
   end
   
 
