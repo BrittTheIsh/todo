@@ -1,13 +1,12 @@
 class ListsController < ApplicationController
 
   def create
-    @list = List.new(params[:list])
-    if @list.save
-        flash[:notice] = "Your list was created"
-    else
-        flash[:alert] = "There was an error creating your list."
+    aggregator = Librato::Metrics::Aggregator.new
+    aggregator.time :list_create do
+      @list = List.new(params[:list])
+      @list.save ? flash[:notice] = "Your list was created" : flash[:alert] = "There was an error creating your list."
+      redirect_to(list_tasks_url(@list))
     end
-    redirect_to(list_tasks_url(@list))
   end
 
   def destroy
