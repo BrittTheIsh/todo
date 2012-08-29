@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+gem 'bundler', '1.2.0.rc.2', :group => :production
+
 gem 'rails', '3.0.9'
 gem 'simple_form', '1.5.1'
 gem 'jquery-rails', '1.0.14'
